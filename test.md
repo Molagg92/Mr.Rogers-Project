@@ -6,6 +6,6 @@ Expected Output: [0, 1, 2, 3, 4, 5]
 
 ----
 
-Test: "It should..." // this is the start of 2nd test for beepBoop()
-Code: 
-Expected Output:
+Test: "it should return user's input number 1 as the string 'Beep!' " 
+Code: robogerTrasncriber(1);
+Expected Output:[0,"Beep!"];
