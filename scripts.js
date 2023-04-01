@@ -7,7 +7,10 @@ function robogerTransciber(userNumberInput){
     let NumberToString = i.toString();
     if (NumberToString.includes('1')){
       userReturnArray.push("Beep!");
-    }else {
+    }else if (NumberToString.includes('2')){
+      userReturnArray.push("Boop!")
+    }
+    else {
       userReturnArray.push(i)
     }
   } return userReturnArray;
