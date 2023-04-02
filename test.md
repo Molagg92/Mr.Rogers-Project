@@ -1,3 +1,4 @@
+
 Test:
 Code:
 Expected Output:
@@ -23,5 +24,17 @@ Expected Output:[0, "Beep!"];
 Test: "it should return user's input number 2 as the string 'Boop!', while inouting 1 still returns 'Beep!' "
 Code:robogerTranscriber(5)
 Expected Output:[0, "Beep!", "Boop!", 3, 4, 5]
+
+----
+
+Test: "it should return user's input number 3 as the string 'Won't you be my neighbor?' "
+Code:robogerTranscriber(3)
+Expected Output: [0, "Beep!", "Boop!","Won't you be my neighbor?"]
+
+----
+
+Test:"it should return "Boop!" when the user enters 12"
+Code:robogersTranscriber(12)
+Expected Output: "Boop"
 
 ----
