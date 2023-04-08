@@ -38,3 +38,13 @@ Code:robogersTranscriber(12)
 Expected Output: "Boop"
 
 ----
+
+Test: "it should return Beep when traking number 21"
+Code:robogersTranscriber(21)
+Expected Output:Beep!
+
+----
+The buisnes logic side works!
+----
+
+
