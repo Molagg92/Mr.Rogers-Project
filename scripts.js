@@ -24,38 +24,79 @@ window.addEventListener("load", function(){
 
 function robogerTransciber(e){
     e.preventDefault();
-    let userNumberInput = document.querySelector("input[type='number']").value;
-    
-    for (let i = 0; i <=userNumberInput; i++){
-      let NumberToString = i.toString();
 
-      if  (NumberToString.includes('2') && NumberToString.includes('1')){
-        userReturnArray.push("Beep!");
-      }else if (NumberToString.includes('2') && NumberToString.includes('3')){
+    let userNumberInput = document.querySelector("input[type='number']").value;
+    userReturnArray = [];
+    result.innerHTML = [0];
+
+    for (let i = 0; i <=userNumberInput; i++){
+      let numberToString = i.toString();
+      
+      if (numberToString === "13" || numberToString === "23") {
         userReturnArray.push("Won't you be my neighbor?");
-      }else if (NumberToString.includes('2')){
+      }
+      else if (numberToString === "12" || numberToString === "21"){
         userReturnArray.push("Boop!");
       }
-      
-      
-      
-      else if  (NumberToString.includes('1') && NumberToString.includes('2')){
-        userReturnArray.push("Boop!"); 
-      }else if(NumberToString.includes('1') && NumberToString.includes('3')){
-        userReturnArray.push("Won't you be my neighbor?");
-      }else if (NumberToString.includes('1')){
+      else if (numberToString.includes('1')) {
         userReturnArray.push("Beep!");
-      }
-      
-      else if (NumberToString.includes("3")){
-        userReturnArray.push("Won't you be my neighbor?");
-      }else {
-        userReturnArray.push(i);
-      }
-    } return result.innerHTML = userReturnArray;
+      }else if (numberToString.includes('2')) {
+        userReturnArray.push("Boop!");
+      }  else if (numberToString.includes("3")){
+        userReturnArray.push("Won't you be my neighbor?")
+      }  else {
+      userReturnArray.push(i);
+    }
 
+
+
+    } return result.innerHTML = userReturnArray;
     
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //     if  (NumberToString.includes('2') && NumberToString.includes('1')){
+  //       userReturnArray.push("Beep!");
+  //     }else if (NumberToString.includes('2') && NumberToString.includes('3')){
+  //       userReturnArray.push("Won't you be my neighbor?");
+  //     }else if (NumberToString.includes('2')){
+  //       userReturnArray.push("Boop!");
+  //     }
+      
+      
+      
+  //     else if  (NumberToString.includes('1') && NumberToString.includes('2')){
+  //       userReturnArray.push("Boop!"); 
+  //     }else if(NumberToString.includes('1') && NumberToString.includes('3')){
+  //       userReturnArray.push("Won't you be my neighbor?");
+  //     }else if (NumberToString.includes('1')){
+  //       userReturnArray.push("Beep!");
+  //     }
+      
+  //     else if (NumberToString.includes("3")){
+  //       userReturnArray.push("Won't you be my neighbor?");
+  //     }else {
+  //       userReturnArray.push(i);
+  //     }
+  //   } return result.innerHTML = userReturnArray;
+
+    
+  // }
 
   
 
