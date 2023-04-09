@@ -34,7 +34,8 @@ _{Following these simple stemps will help you make your way to the Mr.Robogers t
 
 _{This os free use and open source.}_
 
-Copyright (c) _4/8/2023_ _Erik Zambrano, Molagg92_
+Copyright (c) _4/8/2023_ _Erik Zambrano, Molagg92
+_
 
 ==================================================================================
 
